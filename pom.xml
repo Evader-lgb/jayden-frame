@@ -13,10 +13,17 @@
     <packaging>pom</packaging>
 
     <parent>
-        <artifactId>spring-boot-startar-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
-        <version>2.4.2</version>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.3</version>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 
     <!-- 指定阿里云的仓库 -->
     <repositories>
@@ -25,14 +32,14 @@
             <name>aliyun maven</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
             <layout>default</layout>
-            <!-- 是否开启快照版下载 -->
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <!-- 是否开启发布版下载 -->
+            <!-- 是否开启发布版构件下载 -->
             <releases>
                 <enabled>true</enabled>
             </releases>
+            <!-- 是否开启快照版构件下载 -->
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
