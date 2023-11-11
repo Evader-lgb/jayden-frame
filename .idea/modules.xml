@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-web/jayden-common-web.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-web/jayden-common-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jayden-frame.iml" filepath="$PROJECT_DIR$/.idea/jayden-frame.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-user/jayden-user.iml" filepath="$PROJECT_DIR$/jayden-user/jayden-user.iml" />
     </modules>

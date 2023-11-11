@@ -10,6 +10,7 @@
     <modules>
         <module>jayden-user</module>
         <module>jayden-common</module>
+        <module>jayden-common/jayden-common-web</module>
     </modules>
 
     <properties>
