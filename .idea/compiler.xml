@@ -12,8 +12,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jayden-common" target="11" />
-      <module name="jayden-frame" target="1.8" />
-      <module name="jayden-user" target="1.8" />
+      <module name="jayden-frame" target="11" />
+      <module name="jayden-user" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

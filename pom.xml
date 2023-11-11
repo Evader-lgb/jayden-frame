@@ -6,11 +6,19 @@
     <groupId>com.jayden</groupId>
     <artifactId>jayden-frame</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <modules>
         <module>jayden-user</module>
         <module>jayden-common</module>
     </modules>
-    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.plugin.version>3.10.1</maven.plugin.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -43,4 +51,31 @@
         </repository>
     </repositories>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.plugin.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
