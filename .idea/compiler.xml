@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jayden-common" />
         <module name="jayden-common-web" />
         <module name="jayden-user" />
+        <module name="jayden-common" />
+        <module name="jayden-common-mybatisplus" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jayden-common" target="11" />
+      <module name="jayden-common-mybatisplus" target="11" />
       <module name="jayden-common-web" target="11" />
       <module name="jayden-frame" target="11" />
       <module name="jayden-user" target="11" />
@@ -21,8 +23,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jayden-common" options="-parameters" />
-      <module name="jayden-common-web" options="-parameters" />
-      <module name="jayden-frame" options="" />
+      <module name="jayden-common-mybatisplus" options="" />
+      <module name="jayden-common-web" options="" />
+      <module name="jayden-frame" options="-parameters" />
       <module name="jayden-user" options="-parameters" />
     </option>
   </component>

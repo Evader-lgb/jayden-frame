@@ -11,6 +11,7 @@
         <module>jayden-user</module>
         <module>jayden-common</module>
         <module>jayden-common/jayden-common-web</module>
+        <module>jayden-common/jayden-common-mybatisplus</module>
     </modules>
 
     <properties>
@@ -29,8 +30,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-web</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-mybatisplus</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
