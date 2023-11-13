@@ -1,6 +1,6 @@
 package com.jayden.user.controller;
 
-import com.jayden.Result;
+import com.jayden.bean.Result;
 import com.jayden.user.entity.dto.UserDto;
 import com.jayden.user.entity.req.UserReq;
 import com.jayden.user.service.UserService;
@@ -22,6 +22,7 @@ public class UserController {
     public Result<Integer> addUser(@RequestBody UserReq userReq) {
         UserDto userDto = new UserDto();
         BeanUtils.copyProperties(userReq, userDto);
+        int i = 0/0;
         return Result.success(userService.addUser(userDto));
     }
 }

@@ -1,4 +1,4 @@
-package com.jayden;
+package com.jayden.bean;
 
 public class ResultCode {
 
