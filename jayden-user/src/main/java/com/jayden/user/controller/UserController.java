@@ -6,10 +6,7 @@ import com.jayden.user.entity.req.UserReq;
 import com.jayden.user.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
@@ -22,7 +19,11 @@ public class UserController {
     public Result<Integer> addUser(@RequestBody UserReq userReq) {
         UserDto userDto = new UserDto();
         BeanUtils.copyProperties(userReq, userDto);
-        int i = 0/0;
         return Result.success(userService.addUser(userDto));
+    }
+
+    @DeleteMapping("/deleteUser/{id}")
+    public Result<Integer> deleteUser(@PathVariable Integer id) {
+        return Result.success(userService.deleteUser(id));
     }
 }
