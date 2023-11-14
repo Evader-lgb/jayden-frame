@@ -26,7 +26,7 @@
       <module name="jayden-common" options="-parameters" />
       <module name="jayden-common-mybatisplus" options="" />
       <module name="jayden-common-web" options="" />
-      <module name="jayden-frame" options="-parameters" />
+      <module name="jayden-frame" options="" />
       <module name="jayden-user" options="-parameters" />
     </option>
   </component>
