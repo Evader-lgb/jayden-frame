@@ -1,7 +1,11 @@
 package com.jayden.user.controller;
 
 import com.jayden.bean.Result;
+import com.jayden.entity.PageResult;
 import com.jayden.user.entity.dto.UserDto;
+import com.jayden.user.entity.dto.UserListDto;
+import com.jayden.user.entity.po.UserPo;
+import com.jayden.user.entity.req.UserListReq;
 import com.jayden.user.entity.req.UserReq;
 import com.jayden.user.service.UserService;
 import org.springframework.beans.BeanUtils;
@@ -25,5 +29,12 @@ public class UserController {
     @DeleteMapping("/deleteUser/{id}")
     public Result<Integer> deleteUser(@PathVariable Integer id) {
         return Result.success(userService.deleteUser(id));
+    }
+
+    @GetMapping("/list")
+    public Result<PageResult<UserPo>> list(@RequestBody UserListReq userListReq) {
+        UserListDto userListDto = new UserListDto();
+        BeanUtils.copyProperties(userListReq, userListDto);
+        return Result.success(userService.getUserList(userListDto));
     }
 }
