@@ -13,6 +13,7 @@
         <module>jayden-common/jayden-common-web</module>
         <module>jayden-common/jayden-common-mybatisplus</module>
         <module>jayden-common/jayden-common-swagger</module>
+        <module>jayden-common/jayden-common-redis</module>
     </modules>
 
     <properties>

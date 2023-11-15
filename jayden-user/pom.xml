@@ -35,5 +35,12 @@
             <artifactId>jayden-common-swagger</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- 引入Redis依赖 -->
+        <dependency>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-redis</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

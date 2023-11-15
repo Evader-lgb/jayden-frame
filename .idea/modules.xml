@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-mybatisplus/jayden-common-mybatisplus.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-mybatisplus/jayden-common-mybatisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-redis/jayden-common-redis.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-redis/jayden-common-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-swagger/jayden-common-swagger.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-swagger/jayden-common-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-web/jayden-common-web.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-web/jayden-common-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jayden-frame.iml" filepath="$PROJECT_DIR$/.idea/jayden-frame.iml" />
