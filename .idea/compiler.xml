@@ -8,9 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jayden-common-web" />
-        <module name="jayden-user" />
-        <module name="jayden-common" />
         <module name="jayden-common-mybatisplus" />
+      </profile>
+      <profile name="Annotation profile for jayden-frame" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" />
+          <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/mapstruct/mapstruct-processor/1.4.0.Final/mapstruct-processor-1.4.0.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/mapstruct/mapstruct/1.4.0.Final/mapstruct-1.4.0.Final.jar" />
+        </processorPath>
+        <module name="jayden-common" />
+        <module name="jayden-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
