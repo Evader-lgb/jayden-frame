@@ -10,6 +10,8 @@ import com.jayden.user.entity.po.SysUserPo;
 import com.jayden.user.entity.req.PageSysUserReq;
 import com.jayden.user.entity.req.SysUserReq;
 import com.jayden.user.service.SysUserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,6 +25,7 @@ import javax.annotation.Resource;
  */
 @RestController
 @RequestMapping("sysUser")
+@Api(tags = "系统用户管理")
 public class SysUserController {
     /**
      * 服务对象
@@ -35,6 +38,7 @@ public class SysUserController {
      *
      * @return 查询结果
      */
+    @ApiOperation(value = "系统用户列表")
     @GetMapping("list")
     public Result<PageResponse<SysUserPo>> queryByPage(@RequestBody PageSysUserReq pageSysUserReq) {
         PageSysUserDto pageSysUserDto = PageSysUserDtoConvert.INSTANCE.convertReqToDto(pageSysUserReq);
@@ -48,6 +52,7 @@ public class SysUserController {
      * @return 单条数据
      */
     @GetMapping("{id}")
+    @ApiOperation(value = "根据id查询系统用户")
     public Result<SysUserPo> queryById(@PathVariable("id") Long id) {
         return Result.success(this.sysUserService.queryById(id));
     }
@@ -59,6 +64,7 @@ public class SysUserController {
      * @return 新增结果
      */
     @PostMapping("add")
+    @ApiOperation(value = "新增系统用户")
     public Result<SysUserPo> add(@RequestBody SysUserReq sysUserReq) {
         SysUserDto sysUserDto = SysUserDtoConvert.INSTANCE.convertReqToDto(sysUserReq);
 //        SysUserDto sysUserDto = new SysUserDto();
@@ -72,6 +78,7 @@ public class SysUserController {
      * @return 编辑结果
      */
     @PutMapping("edit")
+    @ApiOperation(value = "编辑系统用户")
     public Result<SysUserPo> edit(@RequestBody SysUserReq sysUserReq) {
         SysUserDto sysUserDto = SysUserDtoConvert.INSTANCE.convertReqToDto(sysUserReq);
         return Result.success(this.sysUserService.update(sysUserDto));
@@ -84,6 +91,7 @@ public class SysUserController {
      * @return 删除是否成功
      */
     @DeleteMapping("/delete/{id}")
+    @ApiOperation(value = "删除系统用户")
     public Result<Boolean> deleteById(@PathVariable Long id) {
         return Result.success(this.sysUserService.deleteById(id));
     }

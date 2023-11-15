@@ -12,6 +12,7 @@
         <module>jayden-common</module>
         <module>jayden-common/jayden-common-web</module>
         <module>jayden-common/jayden-common-mybatisplus</module>
+        <module>jayden-common/jayden-common-swagger</module>
     </modules>
 
     <properties>

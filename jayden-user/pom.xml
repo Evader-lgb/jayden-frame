@@ -28,5 +28,12 @@
             <artifactId>mapstruct-processor</artifactId>
             <version>1.4.0.Final</version>
         </dependency>
+
+        <!-- 引入Swagger依赖 -->
+        <dependency>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-swagger</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

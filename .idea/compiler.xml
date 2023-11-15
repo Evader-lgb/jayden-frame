@@ -21,11 +21,13 @@
         </processorPath>
         <module name="jayden-common" />
         <module name="jayden-user" />
+        <module name="jayden-common-swagger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jayden-common" target="11" />
       <module name="jayden-common-mybatisplus" target="11" />
+      <module name="jayden-common-swagger" target="11" />
       <module name="jayden-common-web" target="11" />
       <module name="jayden-frame" target="11" />
       <module name="jayden-user" target="11" />
@@ -35,6 +37,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jayden-common" options="-parameters" />
       <module name="jayden-common-mybatisplus" options="" />
+      <module name="jayden-common-swagger" options="-parameters" />
       <module name="jayden-common-web" options="" />
       <module name="jayden-frame" options="" />
       <module name="jayden-user" options="-parameters" />
