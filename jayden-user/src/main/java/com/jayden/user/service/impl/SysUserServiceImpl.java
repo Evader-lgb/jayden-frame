@@ -6,9 +6,8 @@ import com.jayden.user.convert.SysUserPoConvert;
 import com.jayden.user.entity.dto.PageSysUserDto;
 import com.jayden.user.entity.dto.SysUserDto;
 import com.jayden.user.entity.po.SysUserPo;
-import com.jayden.user.mapper.SysUserDao;
+import com.jayden.user.mapper.SysUserMapper;
 import com.jayden.user.service.SysUserService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -23,7 +22,7 @@ import java.util.List;
 @Service("sysUserService")
 public class SysUserServiceImpl implements SysUserService {
     @Resource
-    private SysUserDao sysUserDao;
+    private SysUserMapper sysUserDao;
 
     /**
      * 通过ID查询单条数据
@@ -62,9 +61,9 @@ public class SysUserServiceImpl implements SysUserService {
      */
     @Override
     public SysUserPo insert(SysUserDto sysUserDto) {
-//        SysUserPo sysUserPo = SysUserPoConvert.INSTANCE.convertDtoToPo(sysUserDto);
-        SysUserPo sysUserPo = new SysUserPo();
-        BeanUtils.copyProperties(sysUserDto,sysUserPo);
+        SysUserPo sysUserPo = SysUserPoConvert.INSTANCE.convertDtoToPo(sysUserDto);
+//        SysUserPo sysUserPo = new SysUserPo();
+//        BeanUtils.copyProperties(sysUserDto,sysUserPo);
         this.sysUserDao.insert(sysUserPo);
         return sysUserPo;
     }

@@ -60,9 +60,9 @@ public class SysUserController {
      */
     @PostMapping("add")
     public Result<SysUserPo> add(@RequestBody SysUserReq sysUserReq) {
-//        SysUserDto sysUserDto = SysUserDtoConvert.INSTANCE.convertReqToDto(sysUserReq);
-        SysUserDto sysUserDto = new SysUserDto();
-        BeanUtils.copyProperties(sysUserReq,sysUserDto);
+        SysUserDto sysUserDto = SysUserDtoConvert.INSTANCE.convertReqToDto(sysUserReq);
+//        SysUserDto sysUserDto = new SysUserDto();
+//        BeanUtils.copyProperties(sysUserReq,sysUserDto);
         return Result.success(this.sysUserService.insert(sysUserDto));
     }
 

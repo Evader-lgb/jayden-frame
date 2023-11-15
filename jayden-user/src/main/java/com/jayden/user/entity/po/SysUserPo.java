@@ -4,9 +4,6 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.jayden.entity.BaseEntity;
 import lombok.Data;
 
-import java.util.Date;
-import java.io.Serializable;
-
 /**
  * 系统用户表(SysUser)实体类
  *
@@ -15,8 +12,7 @@ import java.io.Serializable;
  */
 @TableName("sys_user")
 @Data
-public class SysUserPo extends BaseEntity implements Serializable {
-    private static final long serialVersionUID = 765417742561980404L;
+public class SysUserPo extends BaseEntity {
 
     private String name;
     

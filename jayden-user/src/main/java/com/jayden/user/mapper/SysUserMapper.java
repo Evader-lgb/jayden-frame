@@ -1,5 +1,6 @@
 package com.jayden.user.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jayden.user.entity.po.SysUserPo;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  * @author makejava
  * @since 2023-11-14 23:56:05
  */
-public interface SysUserDao {
+public interface SysUserMapper extends BaseMapper<SysUserPo> {
 
     /**
      * 通过ID查询单条数据
@@ -34,14 +35,6 @@ public interface SysUserDao {
      * @return 总行数
      */
     long count(SysUserPo sysUserPo);
-
-    /**
-     * 新增数据
-     *
-     * @param sysUser 实例对象
-     * @return 影响行数
-     */
-    int insert(SysUserPo sysUser);
 
     /**
      * 批量新增数据（MyBatis原生foreach方法）
