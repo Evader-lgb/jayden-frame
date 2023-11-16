@@ -22,7 +22,7 @@ public class TestController {
 
     @GetMapping("/testRedis")
     public String testRedis() {
-        redisTemplate.opsForValue().set("name", "qj");
+        redisTemplate.opsForValue().set("name", "Jayden");
         String name = (String) redisTemplate.opsForValue().get("name");
 
         return name;

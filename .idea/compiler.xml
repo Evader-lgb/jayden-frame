@@ -42,7 +42,7 @@
       <module name="jayden-common-redis" options="-parameters" />
       <module name="jayden-common-swagger" options="-parameters" />
       <module name="jayden-common-web" options="" />
-      <module name="jayden-frame" options="-parameters" />
+      <module name="jayden-frame" options="" />
       <module name="jayden-user" options="-parameters" />
     </option>
   </component>

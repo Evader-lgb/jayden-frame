@@ -24,6 +24,18 @@ spring:
           slow-sql-millis: 2000
         wall:
           enabled: true
+  # redis
+  redis:
+    host: 124.220.78.37
+    port: 6379
+    password: Lgb@0409.
+    database: 0
+    lettuce:
+      pool:
+        max-active: 8 #最大连接数
+        max-wait: -1  #最大等待时间，-1表示没有限制
+        max-idle: 8   #最大空闲连接
+        min-idle: 0   #最小空闲连接
 sql:
   beauty:
     show: true
@@ -44,3 +56,5 @@ swagger:
   contact-name: jayden
   contact-url: www.jayden.com
   contact-email: jayden@163.com
+
+
