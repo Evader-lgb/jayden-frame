@@ -38,6 +38,10 @@ spring:
         max-wait: -1  #最大等待时间，-1表示没有限制
         max-idle: 8   #最大空闲连接
         min-idle: 0   #最小空闲连接
+  # 缓存预热
+  init:
+    cache:
+      enabled: true
 
 # mybatis
 sql:
@@ -62,5 +66,3 @@ swagger:
   contact-name: jayden
   contact-url: www.jayden.com
   contact-email: jayden@163.com
-
-

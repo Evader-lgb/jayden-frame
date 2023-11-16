@@ -1,5 +1,6 @@
 package com.jayden.redis.util;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -14,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 @Component
 public class RedisUtil {
-    @Resource
+    @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
     @Value(value = "${spring.application.name}")
