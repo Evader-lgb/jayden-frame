@@ -10,6 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.jayden")
 public class UserApplication {
     public static void main(String[] args) {
+        // 集成log4j2异步日志
+        System.setProperty("Log4jContextSelector", "org.apache.logging.log4j.core.async.AsyncLoggerContextSelector");
         SpringApplication.run(UserApplication.class);
     }
 }
