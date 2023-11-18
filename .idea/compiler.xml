@@ -19,6 +19,7 @@
           <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/mapstruct/mapstruct-processor/1.4.0.Final/mapstruct-processor-1.4.0.Final.jar" />
           <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/mapstruct/mapstruct/1.4.0.Final/mapstruct-1.4.0.Final.jar" />
         </processorPath>
+        <module name="jayden-common-log" />
         <module name="jayden-common-redis" />
         <module name="jayden-user" />
         <module name="jayden-common-swagger" />
@@ -27,6 +28,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jayden-common" target="11" />
+      <module name="jayden-common-log" target="11" />
       <module name="jayden-common-mybatisplus" target="11" />
       <module name="jayden-common-redis" target="11" />
       <module name="jayden-common-swagger" target="11" />
@@ -38,6 +40,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jayden-common" options="-parameters" />
+      <module name="jayden-common-log" options="-parameters" />
       <module name="jayden-common-mybatisplus" options="" />
       <module name="jayden-common-redis" options="-parameters" />
       <module name="jayden-common-swagger" options="-parameters" />

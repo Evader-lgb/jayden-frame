@@ -66,3 +66,7 @@ swagger:
   contact-name: jayden
   contact-url: www.jayden.com
   contact-email: jayden@163.com
+
+# log
+logging:
+  config: classpath:log4j-spring.xml

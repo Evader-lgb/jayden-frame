@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-log/jayden-common-log.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-log/jayden-common-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-mybatisplus/jayden-common-mybatisplus.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-mybatisplus/jayden-common-mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-redis/jayden-common-redis.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-redis/jayden-common-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-swagger/jayden-common-swagger.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-swagger/jayden-common-swagger.iml" />
