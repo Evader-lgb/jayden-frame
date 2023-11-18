@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-18T13:41:19+0800",
-    comments = "version: 1.4.0.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
+    date = "2023-11-18T22:37:25+0800",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
 )
 public class PageSysUserPoConvertImpl implements PageSysUserPoConvert {
 
@@ -18,9 +18,6 @@ public class PageSysUserPoConvertImpl implements PageSysUserPoConvert {
         }
 
         SysUserPo sysUserPo = new SysUserPo();
-
-        sysUserPo.setName( pageSysUserDto.getName() );
-        sysUserPo.setAge( pageSysUserDto.getAge() );
 
         return sysUserPo;
     }

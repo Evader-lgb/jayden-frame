@@ -6,8 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-log/jayden-common-log.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-log/jayden-common-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-mybatisplus/jayden-common-mybatisplus.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-mybatisplus/jayden-common-mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-redis/jayden-common-redis.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-redis/jayden-common-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-starter/jayden-common-starter.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-starter/jayden-common-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-swagger/jayden-common-swagger.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-swagger/jayden-common-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-common/jayden-common-web/jayden-common-web.iml" filepath="$PROJECT_DIR$/jayden-common/jayden-common-web/jayden-common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jayden-dependencies/jayden-dependencies.iml" filepath="$PROJECT_DIR$/jayden-dependencies/jayden-dependencies.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jayden-frame.iml" filepath="$PROJECT_DIR$/.idea/jayden-frame.iml" />
       <module fileurl="file://$PROJECT_DIR$/jayden-user/jayden-user.iml" filepath="$PROJECT_DIR$/jayden-user/jayden-user.iml" />
     </modules>

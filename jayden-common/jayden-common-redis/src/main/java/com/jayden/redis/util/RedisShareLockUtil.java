@@ -1,9 +1,8 @@
 package com.jayden.redis.util;
 
-import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.jayden.redis.exception.ShareLockException;
 import org.springframework.stereotype.Component;
-
+import org.apache.commons.lang.StringUtils;
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 

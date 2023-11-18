@@ -2,30 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
         <artifactId>jayden-common</artifactId>
         <groupId>com.jayden</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.jayden</groupId>
-    <artifactId>jayden-common-web</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+
+    <artifactId>jayden-common-starter</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <!-- 排除spring-boot-starter-logging依赖 -->
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>${spring.boot.starter.version}</version>
+            <type>pom</type>
         </dependency>
     </dependencies>
 

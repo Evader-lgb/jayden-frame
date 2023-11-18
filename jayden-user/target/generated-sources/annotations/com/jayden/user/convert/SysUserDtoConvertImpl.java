@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-18T13:41:19+0800",
-    comments = "version: 1.4.0.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
+    date = "2023-11-18T22:37:24+0800",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
 )
 public class SysUserDtoConvertImpl implements SysUserDtoConvert {
 
@@ -18,16 +18,6 @@ public class SysUserDtoConvertImpl implements SysUserDtoConvert {
         }
 
         SysUserDto sysUserDto = new SysUserDto();
-
-        sysUserDto.setId( sysUserReq.getId() );
-        sysUserDto.setName( sysUserReq.getName() );
-        sysUserDto.setAge( sysUserReq.getAge() );
-        sysUserDto.setCreateBy( sysUserReq.getCreateBy() );
-        sysUserDto.setCreateTime( sysUserReq.getCreateTime() );
-        sysUserDto.setUpdateBy( sysUserReq.getUpdateBy() );
-        sysUserDto.setUpdateTime( sysUserReq.getUpdateTime() );
-        sysUserDto.setDeleteFlag( sysUserReq.getDeleteFlag() );
-        sysUserDto.setVersion( sysUserReq.getVersion() );
 
         return sysUserDto;
     }

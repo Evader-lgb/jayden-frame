@@ -3,58 +3,73 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>jayden-frame</artifactId>
+        <artifactId>jayden-dependencies</artifactId>
         <groupId>com.jayden</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>jayden-user</artifactId>
 
+    <properties>
+        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.plugin.version>3.1</maven.plugin.version>
+        <maven.compile.source>11</maven.compile.source>
+        <maven.compile.target>11</maven.compile.target>
+        <jayden.common.version>1.0.0-SNAPSHOT</jayden.common.version>
+    </properties>
+
     <dependencies>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <!-- 排除spring-boot-starter-logging依赖 -->
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-starter</artifactId>
+            <version>${jayden.common.version}</version>
         </dependency>
 
-        <!-- 引入MapStruct依赖，实现实体拷贝 -->
         <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>1.4.0.Final</version>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-web</artifactId>
+            <version>${jayden.common.version}</version>
         </dependency>
+
         <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct-processor</artifactId>
-            <version>1.4.0.Final</version>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-mybatisplus</artifactId>
+            <version>${jayden.common.version}</version>
         </dependency>
 
         <!-- 引入Swagger依赖 -->
         <dependency>
             <groupId>com.jayden</groupId>
             <artifactId>jayden-common-swagger</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${jayden.common.version}</version>
         </dependency>
 
         <!-- 引入Redis依赖 -->
         <dependency>
             <groupId>com.jayden</groupId>
             <artifactId>jayden-common-redis</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${jayden.common.version}</version>
         </dependency>
 
         <!-- 引入Log依赖 -->
         <dependency>
             <groupId>com.jayden</groupId>
             <artifactId>jayden-common-log</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${jayden.common.version}</version>
+        </dependency>
+
+        <!-- 引入MapStruct依赖，实现实体拷贝 -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
         </dependency>
     </dependencies>
 </project>

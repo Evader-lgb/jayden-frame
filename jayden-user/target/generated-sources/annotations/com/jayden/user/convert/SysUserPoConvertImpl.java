@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-18T13:41:19+0800",
-    comments = "version: 1.4.0.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
+    date = "2023-11-18T22:37:24+0800",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
 )
 public class SysUserPoConvertImpl implements SysUserPoConvert {
 
@@ -18,16 +18,6 @@ public class SysUserPoConvertImpl implements SysUserPoConvert {
         }
 
         SysUserPo sysUserPo = new SysUserPo();
-
-        sysUserPo.setId( sysUserDto.getId() );
-        sysUserPo.setCreateBy( sysUserDto.getCreateBy() );
-        sysUserPo.setCreateTime( sysUserDto.getCreateTime() );
-        sysUserPo.setUpdateBy( sysUserDto.getUpdateBy() );
-        sysUserPo.setUpdateTime( sysUserDto.getUpdateTime() );
-        sysUserPo.setDeleteFlag( sysUserDto.getDeleteFlag() );
-        sysUserPo.setVersion( sysUserDto.getVersion() );
-        sysUserPo.setName( sysUserDto.getName() );
-        sysUserPo.setAge( sysUserDto.getAge() );
 
         return sysUserPo;
     }

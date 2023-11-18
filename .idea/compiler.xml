@@ -8,22 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jayden-common-web" />
-        <module name="jayden-common-mybatisplus" />
-      </profile>
-      <profile name="Annotation profile for jayden-frame" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" />
-          <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/mapstruct/mapstruct-processor/1.4.0.Final/mapstruct-processor-1.4.0.Final.jar" />
-          <entry name="$PROJECT_DIR$/../../repository/jayden-frame/org/mapstruct/mapstruct/1.4.0.Final/mapstruct-1.4.0.Final.jar" />
-        </processorPath>
         <module name="jayden-common-log" />
-        <module name="jayden-common-redis" />
         <module name="jayden-user" />
+        <module name="jayden-common-mybatisplus" />
+        <module name="jayden-common-starter" />
+        <module name="jayden-common-redis" />
         <module name="jayden-common-swagger" />
-        <module name="jayden-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,22 +21,26 @@
       <module name="jayden-common-log" target="11" />
       <module name="jayden-common-mybatisplus" target="11" />
       <module name="jayden-common-redis" target="11" />
+      <module name="jayden-common-starter" target="11" />
       <module name="jayden-common-swagger" target="11" />
       <module name="jayden-common-web" target="11" />
-      <module name="jayden-frame" target="11" />
+      <module name="jayden-dependencies" target="11" />
+      <module name="jayden-frame" target="1.5" />
       <module name="jayden-user" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="jayden-common" options="-parameters" />
-      <module name="jayden-common-log" options="-parameters" />
+      <module name="jayden-common" options="" />
+      <module name="jayden-common-log" options="" />
       <module name="jayden-common-mybatisplus" options="" />
-      <module name="jayden-common-redis" options="-parameters" />
-      <module name="jayden-common-swagger" options="-parameters" />
+      <module name="jayden-common-redis" options="" />
+      <module name="jayden-common-starter" options="" />
+      <module name="jayden-common-swagger" options="" />
       <module name="jayden-common-web" options="" />
-      <module name="jayden-frame" options="" />
-      <module name="jayden-user" options="-parameters" />
+      <module name="jayden-dependencies" options="" />
+      <module name="jayden-frame" options="-parameters" />
+      <module name="jayden-user" options="" />
     </option>
   </component>
 </project>
