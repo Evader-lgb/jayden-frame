@@ -25,6 +25,40 @@ public class RedisUtil {
         this.redisTemplate = redisTemplate;
     }
 
+    public boolean setNx(String key,String value,Long time,TimeUnit timeUnit){
+        key = getKeyWithPrefix(key);
+        return redisTemplate.opsForValue().setIfAbsent(key,value,time,timeUnit);
+    }
+
+    /**
+     * 普通缓存获取
+     *
+     * @param key 键
+     * @return 值
+     */
+    public Object get(String key) {
+        key = getKeyWithPrefix(key);
+        return key == null ? null : redisTemplate.opsForValue().get(key);
+    }
+
+    /**
+     * 删除缓存
+     *
+     * @param key 可以传一个值 或多个
+     */
+    @SuppressWarnings("unchecked")
+    public void del(String... key) {
+        for (String item : key) {
+            item = getKeyWithPrefix(item);
+        }
+        if (key != null && key.length > 0) {
+            if (key.length == 1) {
+                redisTemplate.delete(key[0]);
+            } else {
+                redisTemplate.delete((Collection<String>) CollectionUtils.arrayToList(key));
+            }
+        }
+    }
 
     /**
      * 指定缓存失效时间
@@ -73,37 +107,7 @@ public class RedisUtil {
         }
     }
 
-    /**
-     * 删除缓存
-     *
-     * @param key 可以传一个值 或多个
-     */
-    @SuppressWarnings("unchecked")
-    public void del(String... key) {
-        for (String item : key) {
-            item = getKeyWithPrefix(item);
-        }
-        if (key != null && key.length > 0) {
-            if (key.length == 1) {
-                redisTemplate.delete(key[0]);
-            } else {
-                redisTemplate.delete((Collection<String>) CollectionUtils.arrayToList(key));
-            }
-        }
-    }
-
     //============================String=============================
-
-    /**
-     * 普通缓存获取
-     *
-     * @param key 键
-     * @return 值
-     */
-    public Object get(String key) {
-        key = getKeyWithPrefix(key);
-        return key == null ? null : redisTemplate.opsForValue().get(key);
-    }
 
     /**
      * 普通缓存放入
