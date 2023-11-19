@@ -43,6 +43,7 @@
         <freemarker.version>2.3.30</freemarker.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
         <guava.version>19.0</guava.version>
+        <spring.websocket.version>2.5.3</spring.websocket.version>
     </properties>
 
     <dependencyManagement>
@@ -194,6 +195,12 @@
                 <version>${guava.version}</version>
             </dependency>
 
+            <!-- websocket -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-websocket</artifactId>
+                <version>${spring.websocket.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

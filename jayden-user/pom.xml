@@ -61,6 +61,12 @@
             <artifactId>jayden-common-log</artifactId>
             <version>${jayden.common.version}</version>
         </dependency>
+        <!-- websocket -->
+        <dependency>
+            <groupId>com.jayden</groupId>
+            <artifactId>jayden-common-websocket</artifactId>
+            <version>${jayden.common.version}</version>
+        </dependency>
 
         <!-- 引入MapStruct依赖，实现实体拷贝 -->
         <dependency>

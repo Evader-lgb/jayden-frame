@@ -22,6 +22,7 @@
         <module>jayden-common-redis</module>
         <module>jayden-common-log</module>
         <module>jayden-common-tool</module>
+        <module>jayden-common-websocket</module>
     </modules>
 
     <properties>
