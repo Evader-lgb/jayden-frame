@@ -92,8 +92,8 @@
         <AsyncLogger name="com.jayden" level="info" additivity="true">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFileInfo"/>
-<!--            <AppenderRef ref="RollingFileWarn"/>-->
-<!--            <AppenderRef ref="RollingFileError"/>-->
+            <AppenderRef ref="RollingFileWarn"/>
+            <AppenderRef ref="RollingFileError"/>
         </AsyncLogger>
 
         <AsyncRoot level="info" includeLocation = "true">

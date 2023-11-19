@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-11-19T10:51:33+0800",
+    date = "2023-11-19T21:34:54+0800",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.19 (Eclipse Adoptium)"
 )
 public class SysUserDtoConvertImpl implements SysUserDtoConvert {

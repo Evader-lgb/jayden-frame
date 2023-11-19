@@ -74,3 +74,7 @@ logging:
 log:
   aspect:
     enable: true
+
+guava:
+  cache:
+    enable: true
