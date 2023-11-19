@@ -90,7 +90,7 @@
 
         <!-- 异步日志，不会阻塞主线程 -->
         <AsyncLogger name="com.jayden" level="info" additivity="true">
-<!--            <AppenderRef ref="Console"/>-->
+            <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFileInfo"/>
 <!--            <AppenderRef ref="RollingFileWarn"/>-->
 <!--            <AppenderRef ref="RollingFileError"/>-->

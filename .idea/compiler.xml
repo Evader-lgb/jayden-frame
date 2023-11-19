@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jayden-common-web" />
         <module name="jayden-common-log" />
+        <module name="jayden-common-tool" />
         <module name="jayden-user" />
         <module name="jayden-common-mybatisplus" />
         <module name="jayden-common-starter" />
@@ -23,6 +24,7 @@
       <module name="jayden-common-redis" target="11" />
       <module name="jayden-common-starter" target="11" />
       <module name="jayden-common-swagger" target="11" />
+      <module name="jayden-common-tool" target="11" />
       <module name="jayden-common-web" target="11" />
       <module name="jayden-dependencies" target="11" />
       <module name="jayden-frame" target="1.5" />

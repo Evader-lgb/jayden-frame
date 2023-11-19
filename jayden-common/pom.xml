@@ -21,6 +21,7 @@
         <module>jayden-common-swagger</module>
         <module>jayden-common-redis</module>
         <module>jayden-common-log</module>
+        <module>jayden-common-tool</module>
     </modules>
 
     <properties>
