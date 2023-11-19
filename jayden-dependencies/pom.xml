@@ -254,6 +254,7 @@
             <!-- 需要将source中的配置文件打进去 -->
             <resource>
                 <directory>src/main/resources</directory>
+                <filtering>true</filtering>
             </resource>
             <!-- 需要将Mybatis-Plus也要打包进来 -->
             <resource>
@@ -264,5 +265,39 @@
             </resource>
         </resources>
     </build>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <env-flag>local</env-flag>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>test</id>
+            <properties>
+                <env-flag>test</env-flag>
+            </properties>
+            <!-- 指定默认启动环境 -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <profile>
+            <id>beta</id>
+            <properties>
+                <env-flag>beta</env-flag>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env-flag>prod</env-flag>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
